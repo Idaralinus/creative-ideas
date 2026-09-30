@@ -1,4 +1,4 @@
-# Creative Ideas — React + Vite + Tailwind CSS
+# Creative Ideas — Furniture Portfolio
 
 ## Run in VS Code
 1. Install Node.js (Node 20+ recommended).
