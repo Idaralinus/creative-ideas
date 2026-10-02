@@ -1,10 +1,6 @@
 import { useEffect } from "react";
 
-export default function ImageLightbox({
-  image,
-  alt,
-  onClose,
-}) {
+export default function ImageLightbox({ image, alt, onClose }) {
   useEffect(() => {
     const handleKeyDown = (event) => {
       if (event.key === "Escape") {
@@ -14,7 +10,7 @@ export default function ImageLightbox({
 
     document.addEventListener("keydown", handleKeyDown);
 
-    // Prevent background page scrolling
+    // Prevent background scrolling
     document.body.style.overflow = "hidden";
 
     return () => {
@@ -48,6 +44,7 @@ export default function ImageLightbox({
         className="relative max-h-[92vh] max-w-[95vw]"
         onClick={(event) => event.stopPropagation()}
       >
+        {/* Large Image */}
         <img
           src={image}
           alt={alt}
@@ -57,14 +54,14 @@ export default function ImageLightbox({
           className="max-h-[88vh] max-w-[92vw] select-none object-contain"
         />
 
-        {/* Watermark */}
+        {/* Large Watermark */}
         <div className="pointer-events-none absolute inset-0 flex items-center justify-center overflow-hidden">
-          <div className="rotate-[-25deg] whitespace-nowrap text-5xl font-bold tracking-[0.35em] text-white/20 md:text-7xl">
+          <span className="rotate-[-25deg] whitespace-nowrap text-5xl font-bold tracking-[0.35em] text-white/20 md:text-7xl">
             CREATIVE IDEAS
-          </div>
+          </span>
         </div>
 
-        {/* Small watermark */}
+        {/* Small Watermark */}
         <div className="pointer-events-none absolute bottom-4 right-4 rounded bg-black/30 px-3 py-1 text-xs font-semibold tracking-widest text-white/60">
           CREATIVE IDEAS
         </div>

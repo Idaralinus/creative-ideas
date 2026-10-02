@@ -1,5 +1,3 @@
-//
-
 import { useState } from "react";
 import ProtectedImage from "./ProtectedImage";
 import ImageLightbox from "./ImageLightbox";
@@ -49,13 +47,6 @@ export default function Hero() {
               alt="Creative Ideas bedroom furniture"
               className="h-full w-full object-cover object-center transition duration-700 group-hover:scale-105"
             />
-
-            {/* Watermark */}
-            <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
-              <span className="rotate-[-25deg] text-4xl font-bold tracking-[0.3em] text-white/20 md:text-6xl">
-                CREATIVE IDEAS
-              </span>
-            </div>
 
             {/* Hover Label */}
             <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black/0 transition duration-300 group-hover:bg-black/20">

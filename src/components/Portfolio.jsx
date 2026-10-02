@@ -22,6 +22,7 @@ export default function Portfolio() {
     <>
       <section id="portfolio" className="py-20 md:py-24">
         <div className="mx-auto w-[92%] max-w-7xl">
+
           <SectionHeading
             eyebrow="Selected Work"
             title="Spaces, furnished with purpose."
@@ -48,13 +49,6 @@ export default function Portfolio() {
                       className="h-80 w-full object-cover transition duration-500 group-hover:scale-105"
                     />
 
-                    {/* Watermark */}
-                    <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
-                      <span className="rotate-[-25deg] text-3xl font-bold tracking-[0.3em] text-white/20">
-                        CREATIVE IDEAS
-                      </span>
-                    </div>
-
                     {/* View Image Overlay */}
                     <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black/0 transition duration-300 group-hover:bg-black/30">
                       <span className="translate-y-3 rounded-full bg-white px-5 py-2 text-sm font-semibold text-stone-800 opacity-0 shadow-lg transition duration-300 group-hover:translate-y-0 group-hover:opacity-100">
@@ -64,8 +58,10 @@ export default function Portfolio() {
                   </button>
 
                   {/* Project Information */}
-                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-5 pt-16 text-white pointer-events-none">
-                    <p className="serif text-2xl">{p.title}</p>
+                  <div className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-5 pt-16 text-white">
+                    <p className="serif text-2xl">
+                      {p.title}
+                    </p>
 
                     <p className="mt-1 text-xs text-stone-200">
                       {p.category} • {p.description}
