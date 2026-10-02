@@ -9,7 +9,7 @@ export default function Navbar() {
       <div className="mx-auto flex min-h-20 w-[92%] max-w-7xl items-center justify-between py-4 md:py-5">
         <div className="mx-auto flex min-h-20 w-[92%] max-w-7xl items-center justify-left py-4 md:py-5 gap-2">
           <ProtectedImage
-            src="/images/Logo_UE5.jpg"
+            src="/images/optimized/Logo_UE5.webp"
             alt="Creative Ideas"
             className="h-10 w-10 object-contain "
           />
